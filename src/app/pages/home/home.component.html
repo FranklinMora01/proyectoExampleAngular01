@@ -1,0 +1,22 @@
+<table class="table">
+
+    <thead>
+        <tr>
+            <th *ngFor="let header of headersTablet">{{ header }}</th>
+            
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th>{{ saldo }}</th>
+            <th>{{ estado }}</th>
+            
+        </tr>
+    </tbody>
+
+</table>
+
+<app-button [optBtn]="opcionesBtnAumentar" (click)="aumentarSaldo()"></app-button>
+<app-button [optBtn]="opcionesBtnDisminuir" (click)="disminuirSaldo()"></app-button>
+<app-button [optBtn]="opcionesBtnEstado" (click)="cambiarEstado()"></app-button>
